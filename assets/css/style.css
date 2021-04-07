@@ -1,0 +1,19 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
+#app i {
+  font-size: 2em;
+}
+#app i:hover {
+  color: blue;
+}
+#app ul {
+  padding-left: 20px;
+  width: 100%;
+  border-bottom: 1px dashed blue;
+}
+#app ul li {
+  list-style-type: none;
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+/*# sourceMappingURL=style.css.map */

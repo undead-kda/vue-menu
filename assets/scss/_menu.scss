@@ -1,0 +1,18 @@
+#app {
+    i {
+        font-size: 2em;
+        &:hover {
+            color: blue;
+        }
+    }
+    ul {
+        padding-left: 20px;
+        width: 100%;
+        border-bottom: 1px dashed blue;
+        li {
+            list-style-type: none;
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+    }
+}

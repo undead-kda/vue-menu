@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Menu</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="app">
+        <transition name="fade" mode="out-in" class="menu-buttons">
+            <i class="bi bi-menu-up menu-up" v-if="!show" @click="show = !show" key="menu-up"></i>
+            <i class="bi bi-menu-down menu-down" v-else @click="show = !show" key="menu-down"></i>
+        </transition>
+        <transition name="fade">
+            <ul v-if="show">
+                <li v-for="item in items">{{ item }}</li>
+            </ul>
+        </transition>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>
